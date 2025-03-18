@@ -27,4 +27,10 @@ if post_response.status_code == 200:
 else:  
     return "Error: Could not submit the form successfully."  
 
+input_text = input("Enter text to convert from FML Ravathi to Unicode Malayalam: ")  
+converted_text = convert_text_to_unicode(input_text)  
+print("Converted Unicode Malayalam Output:")  
+print(converted_text)  
+
+
 
