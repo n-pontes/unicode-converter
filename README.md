@@ -13,9 +13,10 @@ A Python script to convert Malayalam text from FML Revathi format to Unicode usi
 
 1. Clone the Repository
 
-- Open your terminal and run:
-git clone https://github.com/your-username/toUnicodeConverter.git  
+- Open terminal and run:
+
 ```bash
+git clone https://github.com/your-username/toUnicodeConverter.git  
 cd toUnicodeConverter  
 ```
 
