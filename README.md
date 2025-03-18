@@ -2,12 +2,12 @@
 
 A Python script to convert Malayalam text from FML Revathi format to Unicode using the Kerala Government's Unicode Converter website.
 
-# 🚀 Features
+## Features
 
-✅ Fetches the Malayalam Unicode Converter webpage using HTTP GET request.
-✅ Extracts hidden form data (__VIEWSTATE and __EVENTVALIDATION) for form submission.
-✅ Submits the Malayalam text and retrieves the converted Unicode text using HTTP POST request.
-✅ Outputs the converted Unicode text in the terminal.
+- Fetches the Malayalam Unicode Converter webpage using HTTP GET request.
+- Extracts hidden form data (__VIEWSTATE and __EVENTVALIDATION) for form submission.
+- Submits the Malayalam text and retrieves the converted Unicode text using HTTP POST request.
+- Outputs the converted Unicode text in the terminal.
 
 ## Setup
 
@@ -42,7 +42,7 @@ Windows:
 pip install -r requirements.txt  
 ```
 
-## Usage
+### Usage
 
 Run the script:
 ```bash
@@ -54,7 +54,7 @@ Enter the text in FML Revathi format when prompted. The script will output the c
 Enter text to convert from FML Ravathi to Unicode Malayalam: നമസ്കാരം  
 Converted Unicode Malayalam Output: നമസ്കാരം  
 
-✅ Dependencies
+Dependencies
 requests – For handling HTTP GET and POST requests
 beautifulsoup4 – For parsing and extracting data from HTML
 
