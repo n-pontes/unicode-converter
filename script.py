@@ -10,3 +10,13 @@ if response.status_code == 200:
     soup = BeautifulSoup(response.text, "html.parser")  
     viewstate = soup.find("input", {"name": "__VIEWSTATE"})["value"]  
     eventvalidation = soup.find("input", {"name": "__EVENTVALIDATION"})["value"]  
+
+data = {  
+    "__VIEWSTATE": viewstate,  
+    "__EVENTVALIDATION": eventvalidation,  
+    "txtMLTTRevathy": input_text,  
+    "btnConvert": "-- Convert --"  
+}  
+
+post_response = session.post(url, data=data)  
+
