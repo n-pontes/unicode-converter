@@ -20,3 +20,11 @@ data = {
 
 post_response = session.post(url, data=data)  
 
+if post_response.status_code == 200:  
+    soup = BeautifulSoup(post_response.text, "html.parser")  
+    unicode_text = soup.find("textarea", {"name": "txtUnicode"}).text  
+    return unicode_text.strip()  
+else:  
+    return "Error: Could not submit the form successfully."  
+
+
